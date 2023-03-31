@@ -1,3 +1,9 @@
+import { styled } from '../styles'
+
+const Title = styled('h1', {
+  backgroundColor: '$green300',
+})
+
 export default function Home() {
-  return <h1>Hello World!</h1>
+  return <Title>Hello World!</Title>
 }
