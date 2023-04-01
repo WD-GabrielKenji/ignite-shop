@@ -6,7 +6,6 @@ export const HomeContainer = styled('main', {
   maxWidth: 'calc(100vw - ((100vw - 1180px) / 2))',
   minHeight: 656,
   marginLeft: 'auto',
-  gap: '3rem',
 })
 
 export const Product = styled('a', {
@@ -14,7 +13,6 @@ export const Product = styled('a', {
   justifyContent: 'center',
   alignItems: 'center',
   position: 'relative',
-  padding: '0.25rem',
   borderRadius: 8,
   background: 'linear-gradient(180deg, #1ea483 0%, #7465d4 100%)',
   cursor: 'pointer',
