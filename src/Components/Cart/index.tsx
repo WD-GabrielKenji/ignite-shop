@@ -1,3 +1,6 @@
+import axios from 'axios'
+import { useState } from 'react'
+
 import { useCart } from '@/hooks/useCart'
 import * as Dialog from '@radix-ui/react-dialog'
 import Image from 'next/image'
@@ -22,6 +25,25 @@ export function Cart() {
     style: 'currency',
     currency: 'BRL',
   }).format(cartTotal)
+
+  const [isCreatingCheckoutSession, setIsCreatingCheckoutSession] =
+    useState(false)
+
+  async function handleCheckout() {
+    try {
+      setIsCreatingCheckoutSession(true)
+
+      const response = await axios.post('/api/checkout', {
+        products: cartItems,
+      })
+
+      const { checkoutUrl } = response.data
+      window.location.href = checkoutUrl
+    } catch (err) {
+      setIsCreatingCheckoutSession(false)
+      alert('Redirecionamento para o checkout falhou!')
+    }
+  }
 
   return (
     <Dialog.Root>
@@ -74,7 +96,12 @@ export function Cart() {
               </div>
             </FinalizationDetails>
 
-            <button>Finalizar compra</button>
+            <button
+              disabled={isCreatingCheckoutSession || cartQuantity <= 0}
+              onClick={handleCheckout}
+            >
+              Finalizar compra
+            </button>
           </CartFinalization>
         </CartContent>
       </Dialog.Portal>
