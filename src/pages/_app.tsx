@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app'
 
+import { CartContextProvider } from '@/contexts/CartContext'
 import Head from 'next/head'
 import { Header } from '@/Components/Header'
 
@@ -10,13 +11,15 @@ globalStyles()
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <Container>
-      <Head>
-        <title>Ignite Shop App</title>
-      </Head>
+    <CartContextProvider>
+      <Container>
+        <Head>
+          <title>Ignite Shop App</title>
+        </Head>
 
-      <Header />
-      <Component {...pageProps} />
-    </Container>
+        <Header />
+        <Component {...pageProps} />
+      </Container>
+    </CartContextProvider>
   )
 }
