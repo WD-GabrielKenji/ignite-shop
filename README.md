@@ -22,24 +22,25 @@
 
 ## :computer: <strong id="projeto">Sobre o Projeto </strong>
 
-https://user-images.githubusercontent.com/70767461/229877462-ea1adbed-ead5-44f2-bbe5-c798bc82a9c5.mp4
+https://user-images.githubusercontent.com/70767461/230683239-db69089f-cf60-4ab8-96dc-fb41b93f8d56.mp4
 
 <p align="justify">O <strong>Ignite Shop</strong> é uma aplicação voltada ao ser <strong>E-commerce</strong> com o catálogo de produtos na vitrine.</p>
 
-<p align="justify">Essa aplicação Ignite Shop foi desenvolvida, através aulas práticas do Bootcamp Ignite na trilha ReactJS.</p>
+<p align="justify">Essa aplicação Ignite Shop foi desenvolvida, através aulas práticas e desafio avaliativo do Bootcamp Ignite na trilha ReactJS.</p>
 
 ### :pushpin: Funcionalidades
 
 - [x] Apresentação dos Produtos 
+- [x] Carrinho de Compras
 - [x] Sistema de Compras do Stripe
 
 ### :triangular_ruler: Layout
 
-<p>Você pode visualizar o layout do projeto através desse <a href="https://www.figma.com/file/DLEF3nGp3H9Nscq00U8rPR/Ignite-Shop-(Copy)">link</a>. É necessário ter conta no <a href="https://www.figma.com/">Figma</a> para acessá-lo.</p>
+<p>Você pode visualizar o layout do projeto através desse <a href="https://www.figma.com/file/u5OvWRoe9e6vdPRW9zWCy2/Ignite-Shop-2.0-(Copy)">link</a>. É necessário ter conta no <a href="https://www.figma.com/">Figma</a> para acessá-lo.</p>
 
 ## :rocket: <Strong id="tecnologias"> Tecnologias Utilizadas </Strong>
 
-[![Next JS](https://img.shields.io/badge/Nextjs-blueviolet.svg?style=for-the-badge&amp;logo=Next.js&amp;labelColor=000000&amp")](https://nextjs.org/) [![Typescript Badge](https://img.shields.io/badge/-Typescript-007acc?style=for-the-badge&labelColor=black&logo=typescript&logoColor=007acc)](https://www.typescriptlang.org/) [![Stripe Badge](https://img.shields.io/badge/-Stripe-6666ff?style=for-the-badge&labelColor=black&logo=stripe&logoColor=6666ff)](https://stripe.com/br) [![Axios Badge](https://img.shields.io/badge/-Axios-671DDF?style=for-the-badge&labelColor=black&logo=axios)](https://axios-http.com/ptbr/) [![Stitches Badge](https://img.shields.io/badge/-Stitches-202425?style=for-the-badge&labelColor=black&logo=stitches)](https://stitches.dev) [![Keen Slider Badge](https://img.shields.io/badge/-Keen_Slider-DE657A?style=for-the-badge&labelColor=black&logo=keenSlider)](https://keen-slider.io) 
+[![Next JS](https://img.shields.io/badge/Nextjs-blueviolet.svg?style=for-the-badge&amp;logo=Next.js&amp;labelColor=000000&amp")](https://nextjs.org/) [![Typescript Badge](https://img.shields.io/badge/-Typescript-007acc?style=for-the-badge&labelColor=black&logo=typescript&logoColor=007acc)](https://www.typescriptlang.org/) [![Stripe Badge](https://img.shields.io/badge/-Stripe-6666ff?style=for-the-badge&labelColor=black&logo=stripe&logoColor=6666ff)](https://stripe.com/br) [![Axios Badge](https://img.shields.io/badge/-Axios-671DDF?style=for-the-badge&labelColor=black&logo=axios)](https://axios-http.com/ptbr/) [![Stitches Badge](https://img.shields.io/badge/-Stitches-202425?style=for-the-badge&labelColor=black&logo=stitches)](https://stitches.dev) [![Embla Carousel Badge](https://img.shields.io/badge/-Embla_Carousel-96B1F3?style=for-the-badge&labelColor=black&logo=EmblaCarousel)](https://www.embla-carousel.com) [![Radix UI Badge](https://img.shields.io/badge/-Radix_UI-0C262A?style=for-the-badge&labelColor=black&logo=radixui)](https://www.radix-ui.com)
 
 ## :runner: <strong id="execucao"> Como Executar o Projeto </strong>
 
@@ -81,7 +82,7 @@ Funcionalidades que estão em preparo para serem incrementadas:
 <ul>
   <li> Tema Light </li>
   <li> Resposividade Mobile </li>
-  <li> Sistema de Login com opções de carrinho </li>
+  <li> Sistema de Login </li>
 </ul>
 
 ## :closed_book: <strong id="licenca"> Licença </strong>
