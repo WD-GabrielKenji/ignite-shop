@@ -14,6 +14,7 @@ interface CartContextData {
   cartItems: IProduct[]
   cartTotal: number
   addToCart: (product: IProduct) => void
+  removeCartItem: (productId: string) => void
   checkIfItemAlreadyExists: (productId: string) => boolean
 }
 
@@ -34,6 +35,10 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
     setCartItems((state) => [...state, product])
   }
 
+  function removeCartItem(productId: string) {
+    setCartItems((state) => state.filter((item) => item.id !== productId))
+  }
+
   function checkIfItemAlreadyExists(productId: string) {
     return cartItems.some((product) => product.id === productId)
   }
@@ -44,6 +49,7 @@ export function CartContextProvider({ children }: CartContextProviderProps) {
         cartItems,
         cartTotal,
         addToCart,
+        removeCartItem,
         checkIfItemAlreadyExists,
       }}
     >

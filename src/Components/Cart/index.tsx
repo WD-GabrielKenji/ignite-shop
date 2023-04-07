@@ -15,7 +15,7 @@ import {
 } from './styles'
 
 export function Cart() {
-  const { cartItems, cartTotal } = useCart()
+  const { cartItems, cartTotal, removeCartItem } = useCart()
   const cartQuantity = cartItems.length
 
   const formattedCartTotal = new Intl.NumberFormat('pt-BR', {
@@ -52,7 +52,9 @@ export function Cart() {
                 <CartProductDetails>
                   <p>{cartItem.name}</p>
                   <strong>{cartItem.price}</strong>
-                  <button>Remover</button>
+                  <button onClick={() => removeCartItem(cartItem.id)}>
+                    Remover
+                  </button>
                 </CartProductDetails>
               </CartProduct>
             ))}
