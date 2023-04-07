@@ -5,19 +5,51 @@ export const CartButtonContainer = styled('button', {
   justifyContent: 'center',
   alignItems: 'center',
   position: 'relative',
-  width: '3rem',
-  height: '3rem',
   border: 'none',
   borderRadius: 6,
-  background: '$gray800',
-  color: '$gray500',
 
   '&:disabled': {
     opacity: 0.6,
     cursor: 'not-allowed',
   },
 
-  svg: {
-    fontSize: 24,
+  variants: {
+    color: {
+      gray: {
+        background: '$gray800',
+        color: '$gray500',
+      },
+      green: {
+        background: '$green500',
+        color: '$white',
+
+        '&:not(:disabled):hover': {
+          backgroundColor: '$green300',
+        },
+      },
+    },
+    size: {
+      medium: {
+        width: '3rem',
+        height: '3rem',
+
+        svg: {
+          fontSize: 24,
+        },
+      },
+      large: {
+        width: '3.5rem',
+        height: '3.5rem',
+
+        svg: {
+          fontSize: 32,
+        },
+      },
+    },
+  },
+
+  defaultVariants: {
+    color: 'gray',
+    size: 'medium',
   },
 })

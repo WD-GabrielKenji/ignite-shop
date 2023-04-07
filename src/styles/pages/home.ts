@@ -47,6 +47,12 @@ export const Product = styled('div', {
     backgroundColor: 'rgba(0, 0, 0, 0.6)',
     transition: 'all 0.2s ease-in-out',
 
+    div: {
+      display: 'flex',
+      flexDirection: 'column',
+      gap: 4,
+    },
+
     strong: {
       color: '$gray100',
       fontSize: '$lg',

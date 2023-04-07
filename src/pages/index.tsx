@@ -7,6 +7,7 @@ import Image from 'next/image'
 
 import { HomeContainer, Product, SliderContainer } from '@/styles/pages/home'
 import useEmblaCarousel from 'embla-carousel-react'
+import { CartButton } from '@/Components/CartButton'
 
 interface HomeProps {
   products: {
@@ -45,8 +46,11 @@ export default function Home({ products }: HomeProps) {
                     />
 
                     <footer>
-                      <strong>{product.name}</strong>
-                      <span>{product.price}</span>
+                      <div>
+                        <strong>{product.name}</strong>
+                        <span>{product.price}</span>
+                      </div>
+                      <CartButton color="green" size="large" />
                     </footer>
                   </Product>
                 </Link>
